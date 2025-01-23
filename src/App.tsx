@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import Layout from '@components/Layout/Layout';
+import Header from '@components/Header/Header';
+import Footer from '@components/Footer/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="App">
-      Ecommerce Project
-    </div>
-  )
+    return (
+        <Layout>
+            <Header />
+            Content
+            <Footer />
+        </Layout>
+    );
 }
 
-export default App
+export default App;
